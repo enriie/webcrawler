@@ -10,11 +10,6 @@ async function main() {
 
     console.log(`starting crawl of ${baseURL}`)
     const pages = await crawlPage(baseURL, baseURL, {})
-
-    console.log('Crawl results:')
-    for(const page of Object.entries(pages)) {
-        console.log(page)
-    }
 }
 
 main()
